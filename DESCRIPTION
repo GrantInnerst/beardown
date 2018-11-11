@@ -1,16 +1,18 @@
-Package: thesisdown
+Package: beardown
 Title: An updated R Markdown thesis template using the bookdown package
 Version: 0.0.2
 Authors@R: c(
     person("Chester", "Ismay", email = "chester.ismay@gmail.com", role = "cre"),
-    person("Nick", "Solomon", email = "nick@nicksolomon.me", role = "aut"))
-Description: Using the bookdown package and LaTeX and Word thesis templates from
-    Reed College, this package aims to encourage reproducible research using
-    simple Markdown syntax while embedding all of the R code to produce plots
-    and analyses as well.
-Maintainer: Chester Ismay <chester.ismay@gmail.com>
+    person("Nick", "Solomon", email = "nick@nicksolomon.me", role = "aut"),
+    person("Grant", "Innerst", email = "grant.innerst@gmail.com", role = "aut"))
+Description: This is a modified version of the thesisdown package which uses the 
+    bookdown package and LaTeX and Word thesis templates from Reed College to
+    encourage reproducible research using simple Markdown syntax while embedding 
+    all of the R code to produce plots and analyses as well. The modifications are
+    made to create a template for Baylor University disserations. 
+Maintainer: Grant Innerst <grant.innerst@gmail.com>
 Depends:
-    R (>= 3.2.0),
+    R (>= 3.3.0),
     devtools,
     dplyr,
     ggplot2,
@@ -20,4 +22,4 @@ License: MIT
 Encoding: UTF-8
 LazyData: true
 SystemRequirements: pandoc (>= 1.18) - http://pandoc.org
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.0

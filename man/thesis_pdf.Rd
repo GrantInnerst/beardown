@@ -4,9 +4,11 @@
 \alias{thesis_pdf}
 \title{Creates an R Markdown PDF Thesis document}
 \usage{
-thesis_pdf(toc = TRUE, toc_depth = 3, ...)
+thesis_pdf(highlight = "default", ...)
 }
 \arguments{
+\item{highlight}{Syntax highlighting style. Supported styles include "default", "tango", "pygments", "kate", "monochrome", "espresso", "zenburn", and "haddock". Pass NULL to prevent syntax highlighting.}
+
 \item{toc}{A Boolean (TRUE or FALSE) specifying whether table of contents should be created}
 
 \item{toc_depth}{A positive integer}
@@ -17,11 +19,10 @@ A modified \code{pdf_document} based on the Reed Senior Thesis LaTeX
 }
 \description{
 This is a function called in output in the YAML of the driver Rmd file
-to specify using the Reed College Senior Thesis LaTeX template and cls files.
+to specify using the Baylor University Thesis LaTeX template and cls files.
 }
 \examples{
 \dontrun{
  output: thesisdown::thesis_pdf
 }
 }
-
